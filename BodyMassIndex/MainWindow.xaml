@@ -1,0 +1,22 @@
+﻿<Window x:Class="BodyMassIndex.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BodyMassIndex"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Canvas HorizontalAlignment="Left" Name="bmiCanvas" Height="410" VerticalAlignment="Top" Width="759">
+            <Label Content="BMI = (WEIGHT * 720) / (HEIGHT * HEIGHT)&#xD;&#xA;&#xD;&#xA;HEALTH RANGE :&#xD;&#xA;&#xD;&#xA;1 TO 14 = UNDER HEALTH RANGE&#xD;&#xA;15 TO 26 = HEALTHY&#xD;&#xA; 27 = ABOVE HEALTH RANGE" Height="134" Canvas.Left="32" Canvas.Top="27" Width="309"/>
+            <Label Content="HEIGHT" Height="48" Canvas.Left="32" Canvas.Top="295" Width="132"/>
+            <Label Content="WEIGHT" Height="48" Canvas.Left="32" Canvas.Top="202" Width="132"/>
+            <TextBox Name="weightTxtBox" Height="48" Canvas.Left="169" TextWrapping="Wrap" Text="" Canvas.Top="202" Width="110"/>
+            <TextBox Name="bmiResultTxtBox" Height="48" Canvas.Left="557" TextWrapping="Wrap" Text="" Canvas.Top="202" Width="110"/>
+            <TextBox Name="heightTxtBox" Height="48" Canvas.Left="169" TextWrapping="Wrap" Text="" Canvas.Top="295" Width="110"/>
+            <Button Content="Button" Height="48" Canvas.Left="392" Canvas.Top="202" Width="138" Click="Button_Click"/>
+            <TextBox Name="messageUser" Height="134" Canvas.Left="429" TextWrapping="Wrap" Canvas.Top="27" Width="238"/>
+        </Canvas>
+
+    </Grid>
+</Window>
